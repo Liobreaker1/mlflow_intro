@@ -117,3 +117,13 @@ http://127.0.0.1:5000
 ```
 
 ---
+
+## To make Model Registry available locally
+
+```
+mlflow server \
+  --backend-store-uri sqlite:///mlflow.db \
+  --default-artifact-root ./mlruns \
+  --host 0.0.0.0 \
+  --port 5000
+```
